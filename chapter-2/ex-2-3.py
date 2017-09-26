@@ -8,9 +8,14 @@
 # Variables to hold the size of the tract and number of acres.
 # be sure to initialize these as floats
 
+tract_size = input("What is the size of the tract in square feet?: ")
+f_tract_size = float(tract_size)
+
 
 # Constant for the number of square feet in an acre.
-
+square_feet_per_acre = 43560
+acres = (f_tract_size / square_feet_per_acre)
+print("There are", format(acres, '.2f'))
 
 # Get the square feet in the tract from the user.
 # you will need to convert this input to a float
