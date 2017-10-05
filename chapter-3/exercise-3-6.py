@@ -11,17 +11,41 @@
 
 # Get month and cast it to int
 
+month = input("What is the month?: ")
+i_month = int(month)
 
 # Get day and cast it to int
 
+day = input("What is the day?: ")
+i_day = int(day)
 
 # Get year and cast it to int
 
+year = input("What is the year?: ")
+i_year = int(year)
 
 # This problem can be solved with if-else logic by the reducing the problem domain
 # if month input is out of range
 
 	# set message to hold "invalid month" message
+	
+if i_month <1 or i_month >12:
+    print("invalid month")
+elif i_day <1 or i_month>31:
+    print("invalid day")
+elif i_year <0 or i_year >99:
+    print("invalid year")
+else:
+    if i_year == i_day * i_month:
+        print( i_month, "/", i_day, "/", i_year, sep='')
+        print("This is a magic date")
+        
+    else:
+        print(i_month, "/", i_day, "/", i_year, sep='')
+        print("This is not a magic date")
+        
+    
+
 
 
 # else if day input is out of range

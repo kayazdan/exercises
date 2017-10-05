@@ -23,7 +23,25 @@
 
 # If weight > maximum or < than minimum display an appropriate message
 
+minimum = 0
+maximum = 10000000000000000
 
+
+newton = 9.81
+mass = input("What is the mass?: ")
+f_mass = float(mass)
+
+weight = f_mass * newton
+
+print(weight)
+
+if weight > maximum:
+    print("That is too big you idiot")
+elif weight < minimum:
+    print("That's too small")
+else:
+    print("It's fine")
+    
 
 
 
