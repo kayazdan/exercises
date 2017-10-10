@@ -18,7 +18,19 @@
 # Use a for loop to calculate and display a display a line for each value of minutes
 # set up the loop using a range of comma-separated minutes values 
 
+
+
     # calculate calories burned using the constant for calories burned per minute
 
     # display the minutes and calories burned using two tabs between the values
 
+calories = 9
+minutes = 1
+f_calories = float(calories)
+
+print('Calories\tMinutes')
+print("__________________________")
+
+for num in range(1, 10):
+    total = f_calories * num * minutes
+    print(total, '\t', num)

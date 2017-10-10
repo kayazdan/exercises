@@ -24,6 +24,30 @@
     # add the amount spent to the total spent
 
 
+budget = float(input("What is the budget?: "))
+
+amount_spent = 1
+total_spent = 0
+
+while amount_spent > 0:
+   
+    amount_spent = float(input("What was the amount spent?: "))
+    total_spent += amount_spent
+    
+    
+
+total = budget - total_spent
+
+
+print(format(total, '.2f'))
+if total_spent > budget:
+    print("Over budget, here is the difference", format(total, '.2f'))
+elif total_spent < budget:
+    print("Under budget, here is the difference", format(total, '.2f'))
+else:
+    print("Exactly at budget")
+
+    
 
 # outside the loop, set the difference to hold budget - total spent
 

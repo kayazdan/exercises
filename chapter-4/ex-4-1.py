@@ -12,7 +12,14 @@
 # Get the number of bugs collected from the user
 # use a for loop to get the number of bugs exactly five times, once for each day
 
+total = 0
 
+for num in [1,2,3,4,5]:
+    bugs_num = input("How many bugs did you find today?: ")
+    i_num_bugs = int(bugs_num)
+    total += i_num_bugs
+
+print(total, "bugs were collected in five days")
 	# input bugs collected on this day and convert it to an int
 
     

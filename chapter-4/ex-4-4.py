@@ -9,6 +9,7 @@
 # Declare variables for the distance, speed, and time.
 # initialize these as integers
 
+
 # Get the speed as input from the user and cast it appropriately.
     
 # Get time traveled as input and cast it appropriately
@@ -24,5 +25,14 @@
 
     # Display the current hour and distance traveled, separated by a tab
 
+speed = int(input("What is your speed in miles per hour?: "))
+time = int(input("What is your time in hours?: "))
 
+print("Hour\tDistance")
+print("_____________________________")
 
+for time in range(1, time):
+    distance = speed*time
+    print(time,'\t',distance)
+    
+    
