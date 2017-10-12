@@ -31,7 +31,7 @@ time = int(input("What is your time in hours?: "))
 print("Hour\tDistance")
 print("_____________________________")
 
-for time in range(1, time):
+for time in range(1, time+1):
     distance = speed*time
     print(time,'\t',distance)
     

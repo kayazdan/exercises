@@ -8,23 +8,16 @@
 
 
 # Global constants for assessment percentage and property tax rate
-
+assessment_percentage = 0.9
+property_tax_rate = 0.1
 
 
 # define the main function
 
     # Define local float variables for property value, assessed value and property tax
-
-
-    # Get the property value from the user.
-
-
+    # Get the property value from the users
     # Calculate the assessed value using the global constant
-
-
     # Calculate the property tax using the global constant
-
-
     # Call the function to display property tax information, 
     # passing assessed value and property tax as arguments
 
@@ -38,6 +31,16 @@
 	# display the assessed value
 	
 	# display the property tax
+	
+def main():
+    property_value = float(input("Property value: "))
+    assessed_value = property_value*assessment_percentage
+    property_tax = property_value*property_tax_rate
+    property_tax_information(property_tax, property_value, assessed_value)
+    
+def property_tax_information(property_tax, property_value, assessed_value):
+    print("Assessed value: ", format(assessed_value, '.2f'))
+    print("Property tax: ", format(property_tax, '.2f'))
 
 
 
