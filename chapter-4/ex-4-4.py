@@ -28,8 +28,9 @@
 speed = int(input("What is your speed in miles per hour?: "))
 time = int(input("What is your time in hours?: "))
 
+print(" ")
 print("Hour\tDistance")
-print("_____________________________")
+print("________________")
 
 for time in range(1, time+1):
     distance = speed*time
