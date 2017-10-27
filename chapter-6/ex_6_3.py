@@ -6,6 +6,23 @@
 # then displays each line with its line number before closing the file.
 
 # define the main function
+def main():
+    line = ""
+    filename = ""
+    counter = 0
+    
+    filename = input("File name: ")
+    file = open(filename, "r")
+    line = file.readlines()
+    for line in line:
+        counter += 1
+        line = line.strip('\n')
+        print(counter, line, sep=') ')
+    file.close()
+
+
+    
+    
 
     # Define local variables for line and filename (strings) and counter (int)
 
@@ -31,4 +48,4 @@
 
 # Call the main function to start the program
 
-
+main()

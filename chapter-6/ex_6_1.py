@@ -6,6 +6,13 @@
 # and displays the contents.
 
 
+def main():
+
+    
+    file = open("numbers.txt", "r")
+    read_file = file.read()
+    print(read_file)
+    file.close()
 # define the main function
 
     # Declare a local variable to hold the file contents
@@ -28,3 +35,4 @@
 # Call the main function.
 
 
+main()

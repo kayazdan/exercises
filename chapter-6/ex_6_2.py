@@ -5,7 +5,22 @@
 # attempts to open and read five lines of the file,
 # then displays those lines and finally closes the file.
 
-
+def main():
+    
+    line = ""
+    filename = ""
+    counter = 0
+    
+    
+    filename = input("File name: ")
+    file = open(filename, "r")
+    line = file.readline()
+    while counter < 5 and line != '':
+        print("")
+        print(line)
+        line = file.readline()
+        counter += 1
+    file.close()
 
 # define a main function
 
@@ -36,3 +51,4 @@
 # Call the main function to begin the program
 
 
+main()
